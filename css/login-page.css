@@ -6,6 +6,9 @@
     
 }
 
+.heading-name{
+    margin-top: 2rem;
+}
 .login-form{
     position: relative;
     min-height: 100vh;
