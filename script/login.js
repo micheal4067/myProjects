@@ -42,6 +42,17 @@ function headingEdit(){
 
 headingEdit();
 
+document.getElementById("alphabet-input").addEventListener("keydown", function(e) {
+  var maxLength = 17;
+  var input = this.value;
+
+  if (input.length >= maxLength && e.key !== "Backspace" && e.key !== "Delete") {
+    e.preventDefault();
+  }
+});
+
+
+
 function marketFun () {
   const inputElement = document.querySelector('.market-name');
 
