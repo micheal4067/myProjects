@@ -42,14 +42,18 @@ function headingEdit(){
 
 headingEdit();
 
+
+
 document.getElementById("alphabet-input").addEventListener("keydown", function(e) {
   const maxLength = 17;
   const input = this.value;
 
-  if (input.length >= maxLength && e.key !== "Backspace" && e.key !== "Delete") {
+  if (input.length > maxLength) {
+    this.value = input.slice(0, maxLength);
     e.preventDefault();
   }
 });
+
 
 
 
