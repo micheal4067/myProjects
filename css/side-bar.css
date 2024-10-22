@@ -26,6 +26,10 @@
   font-weight: bold;
 }
 
+.sidebar-link:hover {
+  background-color: none;
+}
+
 .sidebar-link img {
   height: 24px;
   margin-bottom: 4px;
