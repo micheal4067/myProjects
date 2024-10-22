@@ -1,0 +1,155 @@
+footer{
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 0.5fr 1fr;
+  margin-top: 2rem;
+  border-bottom: solid 1px rgb(175, 175, 224);
+  padding-bottom: 4rem;
+}
+
+.about-footer h1{
+  font-size: 17px;
+  margin-bottom: 1rem;
+  color: rgb(53, 51, 51);
+}
+
+.about-footer p{
+  width: 200px;
+  font-size: 13px;
+  color: gray;
+
+}
+
+.footer-utility h1{
+  font-size: 17px;
+  margin-bottom: 4px;
+  margin-bottom: 1rem;
+  color: rgb(53, 51, 51);
+  
+}
+
+.footer-utility a{
+  text-decoration: none;
+  color: gray;
+}
+.footer-utility a:hover{
+  color: #1f14bd;
+}
+
+.footer-search h1{
+  font-size: 17px;
+  margin-bottom: 1rem;
+  color: rgb(53, 51, 51);
+}
+
+.footer-utility li{
+  margin-bottom: 6px;
+}
+
+.search-box{
+  height: 2rem;
+  border: 1px solid blue;
+  outline: none;
+
+}
+
+.footer-search button{
+  padding: 7px 15px;
+  background-color: #230fd1;
+  color: white;
+  border: none;
+  transition: 0.5s;
+}
+
+.footer-search button:hover{
+  background-color: orange;
+  cursor: pointer;
+}
+
+.footer {
+  text-align: center;
+  width: 100%;
+  margin-top: 1rem;
+  padding-bottom: 2.5rem;
+  min-width: 333px;
+
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #666;
+  margin: 0 10px;
+}
+
+.footer-links a:hover {
+  color: #333;
+}
+
+.copyright {
+  font-size: 14px;
+  color: #999;
+  margin-top: 5px;
+}
+
+@media (max-width: 591px) {
+ 
+  footer{
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: #c4c1c183;
+    padding-left: 1rem;
+  }
+
+  .foot-copy{
+    min-width: 300px;
+
+  }
+ 
+  footer .about-footer{
+    margin-bottom: 1rem;
+  }
+  footer .footer-utility{
+    margin-bottom: 1rem;
+  }
+  footer .footer-utility ul{
+    padding-left: 2rem;
+  }
+  footer .social-links{
+    margin-bottom: 2rem;
+  }
+  
+}
+
+@media (min-width: 592px) and (max-width: 859px) {
+  footer{
+   grid-template-columns: 1fr 1fr 1fr;
+   margin-left: 2rem;
+  }
+  footer .footer-utility ul{
+   margin-left: 2rem;
+ }
+
+ footer .social-links{
+   margin-bottom: 2rem;
+ }
+
+ }
+
+
+@media (min-width: 860px) and (max-width: 1246px) {
+   footer{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+   }
+  
+   footer .footer-utility ul{
+    margin-left: 2rem;
+  }
+
+  footer .footer-utility{
+    padding-left: 1rem;
+  }
+
+  footer .social-links{
+    margin-bottom: 2rem;
+  }
+ 
+  }

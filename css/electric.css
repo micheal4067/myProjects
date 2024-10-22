@@ -1,0 +1,123 @@
+.electric-heading{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.electric-heading h1{
+ font-size: 30px;
+ margin-bottom: 2rem;
+ color: rgb(49, 48, 48);
+}
+
+.electric-content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.electric-image-div{
+  flex: 2;
+  
+}
+
+.top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgb(70, 70, 202);
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  display: none; /* Hide initially */
+  z-index: 1000;
+  font-size: 13px;
+}
+
+.top-btn:hover {
+  background-color: rgb(108, 108, 216);
+}
+
+.energy-image{
+  width: 100%;
+  max-width: 621px;
+}
+
+.useful-link-div{
+  flex: 1;
+  margin-left: 10rem;
+}
+
+.useful-link-div h2{
+  margin-bottom: 1rem;
+  color: rgb(49, 48, 48);
+}
+
+.useful-link-div li{
+  margin-bottom: 3px;
+}
+
+.links{
+  margin-left: 3rem;
+}
+
+.link-tree{
+  margin-left: 1rem;
+}
+
+.useful-link-div a{
+  text-decoration: none;
+  color: gray;
+  font-size: 15px;
+}
+.useful-link-div a:hover{
+  color: blue;
+}
+
+.secound-content{
+  width: 700px;
+  margin-top: 2rem;
+}
+
+.secound-content ul{
+  margin-top: 3rem;
+  margin-left: 3rem;
+  margin-bottom: 3rem;
+}
+.page{
+  min-width: 333px;
+}
+
+footer{
+  border-top: 1px solid rgb(115, 115, 165);
+  padding-top: 1rem;
+}
+
+@media (min-width: 700px) and (max-width: 1000px) {
+  .useful-link-div{
+    display: none;
+  }
+  .secound-content{
+    width: 80%;
+  }
+
+  .electric-heading h1{
+    font-size: 25px;
+  }
+
+  
+}
+
+
+@media  (max-width: 699px) {
+  .useful-link-div{
+    display: none;
+  }
+  .secound-content{
+    width: 100%;
+  }
+  .electric-heading h1{
+    font-size: 20px;
+  }
+
+}

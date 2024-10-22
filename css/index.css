@@ -1,0 +1,304 @@
+
+.about{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.about p {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.respon{
+  display: flex;
+  gap: 20px;
+}
+
+
+.section-one{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+
+
+.about-content p{
+  color: gray;
+  
+}
+
+.about-links{
+  margin-top: 1rem;
+  margin-left: 4rem;
+}
+
+.about-link-a{
+  color: #f75b27;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.about-link-a:hover{
+  color: rgb(101, 201, 235);
+}
+
+.skill-bar {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px 0;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+}
+
+.skill-progress {
+  width: 0;
+  height: 15px;
+  background-color: #1f14bd;
+  border-radius: 10px;
+  transition: width 2s; /* Transition effect */
+}
+
+.loaded {
+  width: 97%; /* Final width for skill1 and skill3 */
+}
+
+#skill1.loaded {
+  width: 80%; /* Final width for skill1 and skill3 */
+}
+
+#skill2.loaded {
+  width: 80%; /* Final width for skill2 */
+}
+
+.skill-p{
+  font-size: 13px;
+  color: gray;
+  margin-bottom: 2px;
+  margin-top: 0;
+}
+
+
+
+
+.skills-container p {
+  margin-top: 10px;
+  font-weight: bold;
+  
+ 
+}
+
+.skills-container{
+  flex: 1;
+}
+
+.secound-section{
+  display: grid;
+  flex: 1;
+  width: 100%;
+  
+}
+
+.cleaning-text{
+  flex: 1;
+}
+.cleaning-text p{
+  text-align: center;
+  font-size: 18px;
+}
+
+.section-three{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  gap: 20px;
+}
+
+.tech{
+  gap: 20px;
+}
+
+.tech h1 a{
+  font-size: 18px;
+  margin-bottom: 1rem;
+  color:#1f14bd;
+  cursor: pointer;
+}
+
+
+.tech-image{
+  width: 100%;
+  cursor: pointer;
+  height: 28dvh;
+}
+
+.tech p{
+  font-size: 15px;
+  margin-top: 1rem;
+}
+
+.tech a{
+  text-decoration: none;
+  color: red;
+}
+
+.last-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  border-bottom: solid 1px gray;
+  padding-bottom: 2rem;
+}
+
+.goal{
+  background-color: rgb(70, 70, 202);
+  padding: 35px 5px;
+  flex: 3;
+  border-left: 6px solid white;
+  border-top: 6px solid white;
+  border-bottom: 6px solid white;
+
+  box-shadow: 0 0 0 2px rgba(193, 193, 219, 0.699);
+
+}
+.goal p{
+  color: white;
+  font-size: 14px;
+}
+
+.goal-link{
+  flex: 1;
+  background-color: rgb(108, 108, 216);
+  padding: 30px 5px;
+  cursor: pointer;
+  min-width: 155px;
+}
+.goal-link:hover{
+  background-color: orange;
+}
+.goal-link a{
+  color: black;
+  font-size: 25px;
+  font-weight: bold;
+  word-break: keep-all;
+  text-decoration: none;
+
+}
+.d-sec{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.page{
+  min-width: 333px;
+}
+
+
+
+/* Mobile devices (max-width: 768px) */
+@media (max-width: 700px) {
+ 
+  .respon{
+    display: flex;
+    flex-direction: column;
+  
+  }
+  .section-three{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+  }
+
+  .skills-container{
+    margin-bottom: 1rem;
+  }
+
+  .tech h1{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .page{
+    margin-left: 0;
+    margin-right: 0;
+   
+  }
+
+  .about-links{
+    margin-bottom: 2rem;
+  }
+  .goal-link{
+    display: none;
+  }
+  
+}
+
+/* Tablets (max-width: 1024px) */
+/* Tablets (max-width: 1024px) */
+@media (min-width: 700px) and (max-width: 1246px) {
+  .tech h1{
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .i-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #cecbf863;
+  }
+  .image-1,.image-2,.image-3{
+    flex: 1;
+    height: 28vh;
+  }
+  .image-2{
+    order: 2;
+  }
+  .i-wrap p{
+    flex: 1;
+    padding: 0 30px;
+    margin-top: 0;
+  }
+
+  .section-three{
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .tech{
+    background-color: rgba(220, 223, 223, 0.527);
+  }
+  main{
+    padding: 0 50px;
+  }
+}
+
+@media (min-width:483px ) and (max-width: 700px) { 
+  .i-4{
+    padding: 0 2rem;
+  }
+}
+
+/* Desktop devices (min-width: 1025px) */
+@media (min-width: 1025px) {
+  /* Styles for desktop devices */
+}
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "Urbanist", sans-serif;
+}
+
+body{
+  background-color:#f1f1f1;
+  overflow-x: hidden;
+  
+}
+
+main{
+  margin: 0 1rem;
+ 
+}
+
+.page{
+  background-color: white;
+  overflow-x: hidden;
+  max-width: 1700px;
+}
+
+.top-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgb(70, 70, 202);
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  display: none; /* Hide initially */
+  z-index: 1000;
+  font-size: 10px;
+}
+
+.top-btn:hover {
+  background-color: rgb(108, 108, 216);
+}
+
+
+@media (min-width: 1025px) {
+  .page {
+    margin-left: calc(30% - 300px); /* Increase margin-left when width exceeds 800px */
+    margin-right: calc(30% - 300px); /* Increase margin-right when width exceeds 800px */
+  }
+
+
+}
+
