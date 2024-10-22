@@ -18,6 +18,9 @@ footer{
   color: gray;
 
 }
+a, button {
+  outline: none; /* Remove the default focus outline */
+}
 
 .footer-utility h1{
   font-size: 17px;

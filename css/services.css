@@ -8,6 +8,8 @@ body{
   background-color:#f1f1f1;
 }
 
+
+
 main{
   background-color: white;
   padding-left: 1rem;
@@ -20,6 +22,7 @@ main{
   min-width: 333px;
   overflow-x: hidden; /* Prevent horizontal scroll */
 }
+
 
 
 .header{

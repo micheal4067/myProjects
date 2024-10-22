@@ -9,6 +9,10 @@
  display: none;  
 }
 
+a, button {
+  outline: none; /* Remove the default focus outline */
+}
+
 .sidebar-link {
   height: 70px;
   display: flex;
