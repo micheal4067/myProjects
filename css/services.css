@@ -325,8 +325,10 @@ box-sizing: border-box; /* Better sizing control */
     width: 100%;
     height: 45dvh;
   }
-  .section-two, .section-three{
+  .section-two, .section-three, .section-one{
     border-left: none;
+    border: 1px solid rgba(66, 65, 65, 0.452);
+    margin-top: 1rem;
   }
 
 }
