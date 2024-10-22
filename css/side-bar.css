@@ -52,9 +52,13 @@ a, button {
 
 .sidebar-link ul li a{
  font-size: 14px;
- color: blue;
+ color: white;
  background-color: none;
- text-decoration: underline;
+ 
+}
+
+.sidebar-link ul li{
+  margin-bottom: 5px;
 }
 
 
@@ -65,6 +69,6 @@ a, button {
   left: 5px;
   padding: 10px;
   list-style-type: none;
-  background-color: rgba(194, 192, 192, 0.719);
+  background-color: rgba(118, 110, 167, 0.719);
 
 }

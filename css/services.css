@@ -8,6 +8,10 @@ body{
   background-color:#f1f1f1;
 }
 
+a:active, button:active {
+  background-color: none;
+  color: none; /* Optional active state style */
+}
 
 
 main{

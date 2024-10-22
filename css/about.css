@@ -4,6 +4,11 @@
   font-family: "Urbanist", sans-serif;
 }
 
+a:active, button:active {
+  background-color: none;
+  color: none; /* Optional active state style */
+}
+
 .image-overlay {
   position: relative;
   width: 100%;

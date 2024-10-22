@@ -17,6 +17,11 @@ main{
  
 }
 
+a:active, button:active {
+  background-color: none;
+  color: none; /* Optional active state style */
+}
+
 .page{
   background-color: white;
   overflow-x: hidden;
