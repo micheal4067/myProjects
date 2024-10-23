@@ -18,6 +18,7 @@ function header(){
   const droparrow = document.querySelector('.carret');
   const changeCarret = document.querySelector('.carret');
   const bodyMain = document.querySelector('main'); 
+  
 
   let display = false;
  
@@ -56,14 +57,34 @@ function header(){
 
 toggleIcon.addEventListener('click', ()=>{
   sideBar.style.display = 'block';
+  boot();
   document.body.style.overflow = 'hidden';
+  const checkWidth = ()=> {if (window.innerWidth > 771){
+    sideBar.style.display = 'none';
+ }}
+ window.addEventListener('resize', checkWidth);
+
  });
 
+ function boot(){
+  document.querySelector('.home-js').addEventListener('click',()=>{
+    window.location.href = './index.html';
+  });
+ 
+  document.querySelector('.about-js').addEventListener('click',()=>{
+    window.location.href = './about.html';
+  });
+ 
+  document.querySelector('.services-js').addEventListener('click',()=>{
+    window.location.href = './services.html';
+  });
+ 
+  document.querySelector('.contact-js').addEventListener('click',()=>{
+    window.location.href = './contact.html';
+  });
+ }
 
- const checkWidth = ()=> {if (window.innerWidth > 771){
-     sideBar.style.display = 'none';
-  }}
-  window.addEventListener('resize', checkWidth);
+ 
 }
 header();
 
