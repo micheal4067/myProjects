@@ -21,22 +21,6 @@
   
 }
 
-.top-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background-color: rgb(70, 70, 202);
-  color: #fff;
-  padding: 10px;
-  cursor: pointer;
-  display: none; /* Hide initially */
-  z-index: 1000;
-  font-size: 13px;
-}
-
-.top-btn:hover {
-  background-color: rgb(108, 108, 216);
-}
 
 .energy-image{
   width: 100%;

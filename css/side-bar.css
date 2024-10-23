@@ -2,8 +2,8 @@
   position: fixed;
   left: 0;
   bottom: 0;
-  top: 2rem;
-  background-color:#1c148d;
+  top:0;
+  background-color:#17125a;
   width: 250px;
   z-index: 2000;
  display: none;  
@@ -44,7 +44,7 @@ a, button {
 }
 .close-menu-image{
   padding: 10px;
-  background-color: rgb(15, 43, 95);
+  background-color: rgb(5, 21, 49);
 }
 .close-menu{
   margin: 0;
