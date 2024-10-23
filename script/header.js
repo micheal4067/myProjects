@@ -75,10 +75,6 @@ toggleIcon.addEventListener('click', ()=>{
     window.location.href = './about.html';
   });
  
-  document.querySelector('.services-js').addEventListener('click',()=>{
-    window.location.href = './services.html';
-  });
- 
   document.querySelector('.contact-js').addEventListener('click',()=>{
     window.location.href = './contact.html';
   });
