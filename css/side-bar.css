@@ -2,8 +2,8 @@
   position: fixed;
   left: 0;
   bottom: 0;
-  top: 0;
-  background-color: rgb(117, 126, 206);
+  top: 2rem;
+  background-color:#1c148d;
   width: 250px;
   z-index: 2000;
  display: none;  
@@ -44,20 +44,22 @@ a, button {
 }
 .close-menu-image{
   padding: 10px;
-  background-color: black;
+  background-color: rgb(15, 43, 95);
 }
 .close-menu{
   margin: 0;
 }
 
-.sidebar-link ul li a{
+.dropdown-menus  li a{
  font-size: 14px;
  color: white;
  background-color: none;
+ text-decoration: none;
+font-weight: bold;
  
 }
 
-.sidebar-link ul li{
+.dropdown-menus  li{
   margin-bottom: 5px;
 }
 
@@ -65,10 +67,26 @@ a, button {
 .dropdown-menus {
   display: none;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  top: 19px;
-  left: 5px;
+  top: 175px;
+  left: 43%;
   padding: 10px;
+  position: absolute;
   list-style-type: none;
-  background-color: rgba(118, 110, 167, 0.719);
 
+
+}
+
+.services-link-container{
+  display: flex;
+
+}
+
+.carret-img{
+  width: 80%;
+  height: 1dvh;
+}
+
+.carret{
+  margin-left: 5px;
+  margin-top: -1px;
 }

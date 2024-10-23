@@ -15,31 +15,53 @@ function header(){
   const sideBar = document.querySelector('.sidebar');
   const body = document.querySelector('.close-menu');
   const dropMenu = document.querySelector('.dropdown-menus');
-  const droparrow = document.querySelector('.sidebar-link i');
+  const droparrow = document.querySelector('.carret');
+  const changeCarret = document.querySelector('.carret');
   
 
   let display = false;
  
-  toggleIcon.addEventListener('click', ()=>{
-   sideBar.style.display = 'block';
-  });
+
 
  body.addEventListener('click',()=>{
   sideBar.style.display = 'none';
   dropMenu.style.display = 'none' ;
+  changeCarret.innerHTML = `<img src="./images/carret-right.png" class="carret-img">`;
+  sideBar.style.width = '250px';
+  display = false;
+  document.body.style.overflow = '';
  });
  window.addEventListener('scroll',()=>{
-  sideBar.style.display = 'none';
-  dropMenu.style.display = 'none' ;
+ 
+ 
  });
- droparrow.addEventListener('click', () => {
-  display = !display; // Toggle the display state
-  dropMenu.style.display = display ? 'block' : 'none'; // Set display based on the state
+ droparrow.addEventListener('click', () => { 
+  if(!display){
+    sideBar.style.width = '300px';
+    dropMenu.style.display = 'block';
+    changeCarret.innerHTML = `<img src="./images/carret-left.png" class="carret-img">`;
+    display = true;
  
+  }else{
+    dropMenu.style.display = 'none';
+    sideBar.style.width = '250px';
+    changeCarret.innerHTML = `<img src="./images/carret-right.png" class="carret-img">`;
+    display = false;
+ 
+  }
 });
- 
-}
 
+toggleIcon.addEventListener('click', ()=>{
+  sideBar.style.display = 'block';
+  document.body.style.overflow = 'hidden';
+ });
+
+
+ const checkWidth = ()=> {if (window.innerWidth > 771){
+     sideBar.style.display = 'none';
+  }}
+  window.addEventListener('resize', checkWidth);
+}
 header();
 
 export  {header};

@@ -4,8 +4,6 @@
   font-family: "Urbanist", sans-serif;
 }
 
-
-
 body{
   background-color:#f1f1f1;
   overflow-x: hidden;
@@ -32,7 +30,7 @@ a:active, button:active {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: rgb(70, 70, 202);
+  background-color: rgb(37, 37, 128);
   color: #fff;
   padding: 10px;
   cursor: pointer;
@@ -41,9 +39,7 @@ a:active, button:active {
   font-size: 10px;
 }
 
-.top-btn:hover {
-  background-color: rgb(108, 108, 216);
-}
+
 
 
 @media (min-width: 1025px) {

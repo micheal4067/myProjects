@@ -1,18 +1,25 @@
 // Show button when scrolled down
 function backToTop(){
-  window.addEventListener('scroll', function() {
-    if (window.scrollY > 200) { // Adjust the scroll position
-      document.getElementById('top-btn').style.display = 'block';
-    } else {
-      document.getElementById('top-btn').style.display = 'none';
-    }
-  });
+  const topButton = document.getElementById('top-btn');
+ setTimeout(window.addEventListener('scroll', function() {
+  if (window.scrollY > 200) { 
+   showButton();
+  } else {
+    hideButton()
+  }
+}),2000) 
+
+  function showButton() {
+    topButton.style.display = 'block';
+}
+
+function hideButton() {
+    topButton.style.display = 'none';
+}
   
-  // Scroll to top on button click
   document.getElementById('top-btn').addEventListener('click', function() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
-
 }
 
 export {backToTop};
