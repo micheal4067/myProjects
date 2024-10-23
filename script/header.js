@@ -17,12 +17,10 @@ function header(){
   const dropMenu = document.querySelector('.dropdown-menus');
   const droparrow = document.querySelector('.carret');
   const changeCarret = document.querySelector('.carret');
-  
+  const bodyMain = document.querySelector('main'); 
 
   let display = false;
  
-
-
  body.addEventListener('click',()=>{
   sideBar.style.display = 'none';
   dropMenu.style.display = 'none' ;
@@ -31,8 +29,13 @@ function header(){
   display = false;
   document.body.style.overflow = '';
  });
- window.addEventListener('scroll',()=>{
- 
+ bodyMain.addEventListener('click',()=>{
+  sideBar.style.display = 'none';
+  dropMenu.style.display = 'none' ;
+  changeCarret.innerHTML = `<img src="./images/carret-right.png" class="carret-img">`;
+  sideBar.style.width = '250px';
+  display = false;
+  document.body.style.overflow = '';
  
  });
  droparrow.addEventListener('click', () => { 
@@ -61,6 +64,9 @@ toggleIcon.addEventListener('click', ()=>{
      sideBar.style.display = 'none';
   }}
   window.addEventListener('resize', checkWidth);
+
+
+
 }
 header();
 
