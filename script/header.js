@@ -64,9 +64,6 @@ toggleIcon.addEventListener('click', ()=>{
      sideBar.style.display = 'none';
   }}
   window.addEventListener('resize', checkWidth);
-
-
-
 }
 header();
 
