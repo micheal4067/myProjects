@@ -13,7 +13,7 @@ function header(){
 
   const toggleIcon = document.querySelector('.hamb-icon');
   const sideBar = document.querySelector('.sidebar');
-  const body = document.querySelector('.close-menu');
+  const closeMenu = document.querySelector('.close-menu');
   const dropMenu = document.querySelector('.dropdown-menus');
   const droparrow = document.querySelector('.carret');
   const changeCarret = document.querySelector('.carret');
@@ -22,7 +22,7 @@ function header(){
 
   let display = false;
  
- body.addEventListener('click',()=>{
+ closeMenu.addEventListener('click',()=>{
   sideBar.style.display = 'none';
   dropMenu.style.display = 'none' ;
   changeCarret.innerHTML = `<img src="./images/carret-right.png" class="carret-img">`;
