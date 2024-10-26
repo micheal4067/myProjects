@@ -36,15 +36,6 @@ main{
 
 }
 
-.header.sticky-header {
-  position: -webkit-sticky; /* For Safari */
-  position: sticky;
-  top: 0;
-  padding: 0 8rem 1rem 8rem;
-  animation: slideDown 1s ease-in-out;
-  z-index: 1000;
-  
-}
 
 .service-heading{
   display: flex;
@@ -73,27 +64,28 @@ box-sizing: border-box; /* Better sizing control */
   position: relative;
   width: 100%;
   margin: 0;
+
 }
 
 .slide-center{
   display: center;
   justify-content: center;
   align-items: center;
+ 
 }
 
 /* Caption text */
 .slideshow-container .text{
   color: #f2f2f2;
   font-size: 65px;
-  padding: 8px 12px;
   position: absolute;
   bottom: 50%;
   width: 100%;
   text-align: center;
   font-weight: bolder;
- 
-  
+
 }
+
 .slideshow-container p{
   font-size: 20px;
   padding: 8px;
@@ -134,9 +126,9 @@ box-sizing: border-box; /* Better sizing control */
 
 .image{
   filter: brightness(40%);
+  height: 60vh;
   width: 100%;
-  height: 60dvh;
-  min-height: 200px;
+  min-height: 200px;;
 }
 
 .dot-div{
@@ -268,15 +260,15 @@ box-sizing: border-box; /* Better sizing control */
   
   }
   .slideshow-container a{
-    font-size: 15px;
+    font-size: 12px;
     padding: 6px 10px;
   }
   .service-heading{
-    height: 5rem;
+    height: 4rem;
     font-size: 12px;
   }
   .fade p{
-    font-size: 17px;
+    font-size: 15px;
   }
   .section-three{
     border-left: none;
