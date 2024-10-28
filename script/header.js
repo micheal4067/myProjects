@@ -19,7 +19,10 @@ function header(){
   const changeCarret = document.querySelector('.carret');
   const bodyMain = document.querySelector('main'); 
   
-
+   document.querySelector('.m-logo-area').addEventListener('click', ()=>{
+    window.location.href = './index.html';
+   });
+  
   let display = false;
  
  closeMenu.addEventListener('click',()=>{
