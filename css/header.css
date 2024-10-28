@@ -141,6 +141,11 @@
   display: none;
 }
 
+.search-r{
+  font-size: 30px;
+  font-weight: bold;
+}
+
 
 
 /* Mobile devices (max-width: 768px) */
@@ -215,6 +220,11 @@
     animation: slideDown 1.5s ease-in-out;
     z-index: 1000;
    
+  }
+
+  .search-r{
+    font-size: 20px;
+    font-weight: bold;
   }
  
 }

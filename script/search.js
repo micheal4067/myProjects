@@ -1,16 +1,11 @@
 
-
-function searchClick(){
-  document.getElementById('search-btn').addEventListener('click', () => {
-    const searchTerm = document.getElementById('search-input').value;
-    const url = `./search.html?search=${searchTerm}`;
-    window.open(url, '_blank');
-  });
-}
+import { header } from "./header.js";
+import { searchClick } from "./links.js";
 
 
+header();
+searchClick();
 
-export {searchClick};
-
+document.getElementById('search-results').innerHTML = `<p> Sorry! No results found for your search.</p>`;
 
 

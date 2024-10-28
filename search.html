@@ -3,14 +3,14 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>| SearchResults| Michellene PowerTech</title>
+    <title> SearchResults | Michellene PowerTech</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="icon" type="image" href="./images/logo-with-name-removebg-preview.png">
+    <link rel="icon" type="image" href="./images/michellene-logo.png">
     <link rel="stylesheet" href="./css/index.css">
     <link rel="stylesheet" href="./css/general.css">
     <link rel="stylesheet" href="./css/header.css">
@@ -19,125 +19,162 @@
   </head>
   <body>
     <nav class="sidebar">
-      <div class="sidebar-link">
+      <div class="close-menu">
+        <img src="./images/close.png" class="close-menu-image" width="22px">
+      </div>
+      <div class="sidebar-link home-js">
         <div><a href="./index.html">HOME</a></div>
       </div>
-      <div class="sidebar-link">
+      <div class="sidebar-link about-js">
         <div><a href="./about.html">ABOUT</a></div>
       </div>
-      <div class="sidebar-link">
+      <div class="sidebar-link services-js">
         <div class="services-link-container">
-          <a href="./services.html" class="services-link">SERVICES <i class="fa fa-arrow-down"></i></a>
-          <ul class="dropdown-menu">
-            <li><a href="./tech.html">TECHNOLOGIES</a></li>
-            <li><a href="./web.html">WEB APP</a></li>
-            <li><a href="./electric.html">ENERGY & ELECTRIC</a></li>
-          </ul>
+          <a href="./services.html" class="services-link">SERVICES</a>
+          <div class="carret"><img src="./images/carret-right.png" class="carret-img"></div>
         </div>
       </div>
-      <div class="sidebar-link">
+      <div class="sidebar-link contact-js">
         <div><a href="./contact.html">CONTACT</a></div>
       </div>
+      <ul class="dropdown-menus">
+        <li><a href="./tech.html">TECHNOLOGIES</a></li>
+        <li><a href="./web.html">WEB APP</a></li>
+        <li><a href="./electric.html">ENERGY & ELECTRIC</a></li>
+      </ul>
     </nav>
+
     <div class="blank-border"></div> 
     <div class="page">
-    <header>
-      <div class="logo-div">
-        <div class="logo-area">
-          <img src="./images/logo-with-name-removebg-preview.png" class="logo logo-js" alt="">
-        </div>
-        <p class="logo-writeup">Reliable Technology Solutions
-        </p>
-      </div>
-      <div class="menu-link-div">
-        <a href="index.html">HOME</a> / 
-        <a href="./about.html">ABOUT</a> / 
-        <div class="services-link-container">
-          <a href="./services.html" class="services-link">SERVICES <i class="fa fa-arrow-down"></i></a> /
-          <ul class="dropdown-menu">
-            <li><a href="./tech.html">TECHNOLOGIES</a></li>
-            <li><a href="./web.html">WEB APP</a></li>
-            <li><a href="./electric.html">ENERGY & ELECTRIC</a></li>
-          </ul>
-        </div>
-        <a href="./contact.html">CONTACT</a>
-      </div>
-      
-      <div class="social-links">
-        <a href="https://www.facebook.com/profile.php?id=100083129598961"  class="facebook">
-          <i class="fab fa-facebook" aria-hidden="true"></i>
-        </a>
-        
-        <a href="https://wa.me/message/Q4VTR6DJ2EKSJ1 " target="_blank" class="google">
-          <i class="fab fa-whatsapp" aria-hidden="true"></i>
-        </a>
-        <a href="" target="_blank" class="linkedin" >
-          <i class="fab fa-linkedin" aria-hidden="true"></i>
-        </a>
-        <a href="" target="_blank" class="instagram" >
-          <i class="fab fa-instagram" aria-hidden="true"></i>
-        </a>
-      </div>
-      <div class="customer-support">
-        <p class="customer">CUSTOMER SUPPORT</p>
-        <p>08139709869 | 07045305094 | michellenetruce@gmail.com</p>
-      </div> 
-    </header> 
-    <main>
+      <header>
+        <div class="m-first-d">
+          <div class="m2-first-d">
 
-      <h1>Search Results</h1>
-      <div id="search-results"></div>
-
-
-
-      <footer>
-        <div class="logo-footer">
-          <div class="logo-area">
-            <img src="./images/logo-with-name-removebg-preview.png" class="logo logo-js" alt="">
+            <div class="hamb-menu">
+              <img src="./images/menu-icon.png" class="hamb-icon">
+             </div>
+            <div class="logo-div">
+              <div class="logo-area">
+                <img src="./images/michellene-logo.png" class="logo logo-js" alt="">
+              </div>
+              <p class="logo-writeup">Reliable Technology Solutions
+              </p>
+            </div>
+            <div class="menu-link-div">
+              <a href="index.html">HOME</a> / 
+              <a href="./about.html">ABOUT</a> / 
+              <div class="services-link-container">
+                <a href="./services.html" class="services-link">SERVICES <i class="fa fa-arrow-down"></i></a> /
+                <ul class="dropdown-menu">
+                  <li><a href="./tech.html">TECHNOLOGIES</a></li>
+                  <li><a href="./web.html">WEB APP</a></li>
+                  <li><a href="./electric.html">ENERGY & ELECTRIC</a></li>
+                </ul>
+              </div>
+              <a href="./contact.html">CONTACT</a>
+            </div>
+            
+            <div class="social-links">
+              <a href="https://www.facebook.com/profile.php?id=100083129598961"  class="facebook">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+              </a>
+              
+              <a href="https://wa.me/message/Q4VTR6DJ2EKSJ1 " class="google">
+                <i class="fab fa-whatsapp" aria-hidden="true"></i>
+              </a>
+              <a href="" class="linkedin" >
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="" class="instagram" >
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="customer-support">
+              <p class="customer">CUSTOMER SUPPORT</p>
+              <p>08139709869 | 07045305094 | michellenetruce@gmail.com</p>
+            </div> 
           </div>
-          <div class="social-links">
-            <a href="https://www.facebook.com/profile.php?id=100083129598961" class="facebook">
+        </div>
+        
+        <div class="m-sec-h">
+          <div class="m-logo-area">
+            <img src="./images/michellene-logo.png" class="logo" alt="">
+          </div>
+          <div class="m-social-links">
+            <a href="https://www.facebook.com/profile.php?id=100083129598961"  class="facebook">
               <i class="fab fa-facebook" aria-hidden="true"></i>
             </a>
             
-            <a href="https://wa.me/message/Q4VTR6DJ2EKSJ1" target="_blank" class="google">
+            <a href="https://wa.me/message/Q4VTR6DJ2EKSJ1 " target="_blank" class="google">
               <i class="fab fa-whatsapp" aria-hidden="true"></i>
             </a>
-            <a href="#"  class="linkedin" >
+            <a href="" class="linkedin" >
               <i class="fab fa-linkedin" aria-hidden="true"></i>
             </a>
-            <a href="#"  class="instagram" >
+            <a href=""  class="instagram" >
               <i class="fab fa-instagram" aria-hidden="true"></i>
             </a>
           </div>
-        </div>
-        <div class="about-footer">
-          <h1>ABOUT MICHELLENE POWERTECH</h1>
-          <p>We provide rapidly expanding ICT, Web & Mobile and Energy solutions and services with a focus in optimal solutions to clients’ business needs.</p>
-        </div>
-        <div class="footer-utility">
-          <h1>UTILITIES</h1>
-          <ul>
-            <li><a href="./index.html">Home</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./services.html">Services</a></li>
-            <li><a href="./contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-search">
-          <h1>SEARCH</h1>
-          <input type="text" class="search-box" id="search-input">
-          <button id="search-btn">Search</button>
-        </div>
-      </footer>
-      
-      <div class="footer">
-        <span class="footer-links">
-          <a href="#">Privacy</a> |
-          <a href="#">Sitemap</a> |
-          <a href="#">Terms and Conditions</a>
-        </span><br>
-        <span class="copyright">&copy; Copyright 2024 MICHELLENE POWERTECH.</span>
+        </div> 
+      </header> 
+    <main>
+
+      <p class="search-r">Search Results</p>
+      <div id="search-results" style="padding-bottom: 4rem;"></div>
+
+
+
+      <div class="foot-copy">
+        <footer>
+          <div class="logo-footer">
+            <div class="logo-area">
+              <img src="./images/michellene-logo.png" class="logo logo-js" alt="">
+            </div>
+            <div class="social-links">
+              <a href="https://www.facebook.com/profile.php?id=100083129598961" class="facebook">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+              </a>
+              
+              <a href="https://wa.me/message/Q4VTR6DJ2EKSJ1" target="_blank" class="google">
+                <i class="fab fa-whatsapp" aria-hidden="true"></i>
+              </a>
+              <a href="#"  class="linkedin" >
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
+              </a>
+              <a href="#"  class="instagram" >
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+          <div class="about-footer">
+            <h1>ABOUT MICHELLENE POWERTECH</h1>
+            <p>We provide rapidly expanding ICT, Web & Mobile and Energy solutions and services with a focus in optimal solutions to clients’ business needs.</p>
+          </div>
+          <div class="footer-utility">
+            <h1>UTILITIES</h1>
+            <ul>
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./about.html">About</a></li>
+              <li><a href="./services.html">Services</a></li>
+              <li><a href="./contact.html">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-search">
+            <h1>SEARCH</h1>
+            <input type="text" class="search-box" id="search-input">
+            <button id="search-btn">Search</button>
+          </div>
+        </footer>
+        
+        <div class="footer">
+          <span class="footer-links">
+            <a href="#">Privacy</a> |
+            <a href="#">Sitemap</a> |
+            <a href="#">Terms and Conditions</a>
+          </span><br>
+          <span class="copyright">&copy; Copyright 2024 MICHELLENE POWERTECH.</span>
+        </div> 
+ 
       </div>
     </main>  
   </div>

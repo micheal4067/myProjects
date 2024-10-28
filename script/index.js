@@ -1,9 +1,12 @@
 import {header} from './header.js' ;
 import { backToTop } from './backToTop.js';
 import { logoClick } from './links.js';
+import { searchClick } from './links.js';
  
 header();
 logoClick();
+searchClick();
+
 
 window.onload = function() {
   const skills = document.querySelectorAll('.skill-progress');

@@ -6,6 +6,7 @@ function NavigateLinks(){
   document.querySelector('.overlay-btn-js').addEventListener('click',()=>{
     window.location.href = './contact.html';
   });
+  
 
 }
 
@@ -16,4 +17,11 @@ export function logoClick (){
   });
 }
 
+export function searchClick(){
+  document.getElementById('search-btn').addEventListener('click', () => {
+    const searchTerm = document.getElementById('search-input').value;
+    const url = `./search.html?search=${searchTerm}`;
+    window.location.href = './search.html';
+  });
+}
 export {NavigateLinks};
