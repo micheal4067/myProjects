@@ -6,7 +6,6 @@
 
 body{
   background-color:#f1f1f1;
-  overflow-x: hidden;
   
 }
 
@@ -46,6 +45,11 @@ a:active, button:active {
   .page {
     margin-left: calc(30% - 300px); /* Increase margin-left when width exceeds 800px */
     margin-right: calc(30% - 300px); /* Increase margin-right when width exceeds 800px */
+  }
+
+  .sticky-header {
+    margin-left: calc(20% - 300px); /* Increase margin-left when width exceeds 800px */
+    margin-right: calc(20% - 300px); /* Increase margin-right when width exceeds 800px */
   }
 
 

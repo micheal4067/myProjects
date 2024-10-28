@@ -98,7 +98,7 @@ a, button {
   footer{
     display: grid;
     grid-template-columns: 1fr;
-    background-color: #c4c1c183;
+    background-color: #f5f1f183;
     padding-left: 1rem;
   }
 

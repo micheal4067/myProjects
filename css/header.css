@@ -14,31 +14,27 @@
   cursor: pointer;
 }
 
- .m2-first-d{
+
+.m2-first-d{
   display: flex;
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 7px 7px -4px rgba(0, 0, 0, 0.1);
   margin-bottom: 4rem;
   background-color: white;
-  z-index: 1;
-  position: relative;
-  top: -100%;
-  animation: none;
+  z-index: 1000;
   padding-left: 2rem;
   padding-right: 2rem;
 }
 
- .m2-first-d .sticky-header {
-  position: -webkit-sticky; /* For Safari */
-  position: sticky;
+ .sticky-header {
+  position: fixed;
   top: 0;
-  padding-left: 2rem;
-  padding-right: 2rem;
-  margin: 0 0;
-  animation: slideDown 1s ease-in-out;
+  left: 90px;
+  right: 90px;
+  animation: slideDown 1.5s ease-in-out;
   z-index: 1000;
-  
+ 
 }
 
 @keyframes slideDown {
@@ -165,7 +161,7 @@
     display: block;
   }
 
-  .logo-div .logo-area{
+  .logo-div .logo-area, .contact-text{
     display: none;
   }  
  
@@ -190,7 +186,6 @@
     display: grid; 
     padding-left: 0;
     padding-right: 0;
-   
    
   }
   .about p{
@@ -220,6 +215,13 @@
     height: 2rem;
   }
 
+  .sticky-header {
+   
+    left: 10px;
+    right: 10px;
+    margin:0;
+  }
+ 
 }
 
 /* Tablets (max-width: 1024px) */
@@ -234,12 +236,17 @@
 
   .m2-first-d{
    padding-bottom: 0;
+
+  }
+
+  .sticky-header {
+   margin: 0;
+    left: 10px;
+    right: 10px; 
+  }
+
+  .contact-text{
+    display: none;
   }
 
 }
-
-/* Desktop devices (min-width: 1025px) */
-@media (min-width: 1025px) {
-  /* Styles for desktop devices */
-}
-

@@ -2,9 +2,9 @@
 
 function header(){
   window.addEventListener('scroll', ()=> {
-    let header = document.querySelector('header');
+    let header = document.querySelector('.m2-first-d');
     let scrollPosition = window.scrollY;
-    if (scrollPosition > window.innerHeight* 0.5) {
+    if (scrollPosition > window.innerHeight* 0.5 && window.innerWidth < 1700){
       header.classList.add('sticky-header');
     } else if (scrollPosition < window.innerHeight* 0.1) {
       header.classList.remove('sticky-header');
