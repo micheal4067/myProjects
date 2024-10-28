@@ -136,6 +136,10 @@ a, button {
    margin-bottom: 2rem;
  }
 
+ .foot{
+  margin: 0 1rem;
+ }
+
  footer .about-footer{
   margin-right: 30px;
  }
