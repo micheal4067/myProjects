@@ -349,6 +349,10 @@ span{
     column-gap: 10px;
   }
 
+  .a-t{
+    margin-bottom: 20px;
+  }
+
   .overlay-text p {
     font-size: 17px;
   }

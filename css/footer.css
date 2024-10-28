@@ -4,6 +4,7 @@ footer{
   margin-top: 2rem;
   border-bottom: solid 1px rgb(175, 175, 224);
   padding-bottom: 4rem;
+  justify-content: start;
 }
 
 .about-footer h1{
@@ -125,7 +126,7 @@ a, button {
 @media (min-width: 592px) and (max-width: 859px) {
   footer{
    grid-template-columns: 1fr 1fr 1fr;
-   margin-left: 2rem;
+  
   }
   footer .footer-utility ul{
    margin-left: 2rem;
