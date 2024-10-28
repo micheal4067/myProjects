@@ -27,15 +27,6 @@
   padding-right: 2rem;
 }
 
- .sticky-header {
-  position: fixed;
-  top: 0;
-  left: 90px;
-  right: 90px;
-  animation: slideDown 1.5s ease-in-out;
-  z-index: 1000;
- 
-}
 
 @keyframes slideDown {
   from {
@@ -216,10 +207,14 @@
   }
 
   .sticky-header {
-   
+    position: fixed;
+    top: 0;
     left: 10px;
     right: 10px;
     margin:0;
+    animation: slideDown 1.5s ease-in-out;
+    z-index: 1000;
+   
   }
  
 }
@@ -237,12 +232,6 @@
   .m2-first-d{
    padding-bottom: 0;
 
-  }
-
-  .sticky-header {
-   margin: 0;
-    left: 10px;
-    right: 10px; 
   }
 
   .contact-text{
