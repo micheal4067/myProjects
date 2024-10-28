@@ -112,14 +112,14 @@
 
 .section-three{
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   margin-top: 3rem;
   gap: 20px;
 }
 
 .tech{
-  gap: 20px;
+  flex: 1;
 }
 
 .tech h1 a{
