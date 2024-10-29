@@ -41,6 +41,7 @@ a:active, button:active {
 
 
 
+
 @media (min-width: 1025px) {
   .page {
     margin-left: calc(30% - 300px); /* Increase margin-left when width exceeds 800px */
