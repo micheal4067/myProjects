@@ -17,7 +17,7 @@ function header(){
   const dropMenu = document.querySelector('.dropdown-menus');
   const droparrow = document.querySelector('.carret');
   const changeCarret = document.querySelector('.carret');
-  const bodyMain = document.querySelector('body'); 
+  const bodyMain = document.querySelector('.page'); 
   const filterBody = document.querySelector('.page'); 
   
    document.querySelector('.m-logo-area').addEventListener('click', ()=>{
