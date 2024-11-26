@@ -5,8 +5,7 @@
 }
 
 body{
-  background-color:#f1f1f1;
-  
+  background-color:#f1f1f1; 
 }
 
 main{
@@ -23,6 +22,7 @@ a:active, button:active {
   background-color: white;
   overflow-x: hidden;
   max-width: 1700px;
+  min-width: 287px;
 }
 
 .top-btn {

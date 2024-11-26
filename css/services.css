@@ -23,8 +23,8 @@ main{
 
 .page{
  margin: 0;
-  min-width: 333px;
-  overflow-x: hidden; /* Prevent horizontal scroll */
+  overflow-x: hidden; 
+  min-width: 287px;
 }
 
 
@@ -329,3 +329,9 @@ box-sizing: border-box; /* Better sizing control */
    }
  
  }
+
+ @media (max-width: 332px){
+ .slideshow-container .energy{
+  padding-bottom: 18px;
+ }
+}

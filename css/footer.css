@@ -45,6 +45,10 @@ a, button {
   color: rgb(53, 51, 51);
 }
 
+.footer-search input{
+  padding-left: 10px;
+}
+
 .footer-utility li{
   margin-bottom: 6px;
 }
@@ -74,7 +78,6 @@ a, button {
   width: 100%;
   margin-top: 1rem;
   padding-bottom: 2.5rem;
-  min-width: 333px;
 
 }
 
@@ -103,10 +106,6 @@ a, button {
     padding-left: 1rem;
   }
 
-  .foot-copy{
-    min-width: 300px;
-
-  }
  
   footer .about-footer{
     margin-bottom: 1rem;
@@ -164,4 +163,10 @@ a, button {
     margin-bottom: 2rem;
   }
  
+  }
+
+  @media (max-width: 332px){
+    .foot-copy h1{
+      font-size: 13px;
+    }
   }

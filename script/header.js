@@ -13,11 +13,12 @@ function header(){
 
   const toggleIcon = document.querySelector('.hamb-icon');
   const sideBar = document.querySelector('.sidebar');
-  const closeMenu = document.querySelector('.close-menu');
+  const closeMenu = document.querySelector('.close-menu-image');
   const dropMenu = document.querySelector('.dropdown-menus');
   const droparrow = document.querySelector('.carret');
   const changeCarret = document.querySelector('.carret');
-  const bodyMain = document.querySelector('main'); 
+  const bodyMain = document.querySelector('body'); 
+  const filterBody = document.querySelector('.page'); 
   
    document.querySelector('.m-logo-area').addEventListener('click', ()=>{
     window.location.href = './index.html';
@@ -28,20 +29,13 @@ function header(){
  closeMenu.addEventListener('click',()=>{
   sideBar.style.display = 'none';
   dropMenu.style.display = 'none' ;
+  filterBody.style.filter = '';
   changeCarret.innerHTML = `<img src="./images/carret-right.png" class="carret-img">`;
   sideBar.style.width = '250px';
   display = false;
   document.body.style.overflow = '';
  });
- bodyMain.addEventListener('click',()=>{
-  sideBar.style.display = 'none';
-  dropMenu.style.display = 'none' ;
-  changeCarret.innerHTML = `<img src="./images/carret-right.png" class="carret-img">`;
-  sideBar.style.width = '250px';
-  display = false;
-  document.body.style.overflow = '';
- 
- });
+
  droparrow.addEventListener('click', () => { 
   if(!display){
     sideBar.style.width = '300px';
@@ -58,27 +52,39 @@ function header(){
   }
 });
 
-toggleIcon.addEventListener('click', ()=>{
-  sideBar.style.display = 'block';
-  boot();
-  document.body.style.overflow = 'hidden';
-  const checkWidth = ()=> {if (window.innerWidth > 771){
-    sideBar.style.display = 'none';
- }}
- window.addEventListener('resize', checkWidth);
+  toggleIcon.addEventListener('click', (event)=>{
+    event.stopPropagation();
+    sideBar.style.display = 'block';
+    filterBody.style.filter = 'brightness(40%)';
+    boot();
+    document.body.style.overflow = 'hidden';
+    const checkWidth = ()=> {if (window.innerWidth > 771){
+      sideBar.style.display = 'none';
+   }}
+   window.addEventListener('resize', checkWidth);
+   });
 
- });
+    bodyMain.addEventListener('click',()=>{
+      sideBar.style.display = 'none';
+      dropMenu.style.display = 'none' ;
+      filterBody.style.filter = '';
+      changeCarret.innerHTML = `<img src="./images/carret-right.png" class="carret-img">`;
+      sideBar.style.width = '250px';
+      display = false;
+      document.body.style.overflow = '';
+     
+     });
 
  function boot(){
-  document.querySelector('.home-js').addEventListener('click',()=>{
+  document.querySelector('.home-js a').addEventListener('click',()=>{
     window.location.href = './index.html';
   });
  
-  document.querySelector('.about-js').addEventListener('click',()=>{
+  document.querySelector('.about-js a').addEventListener('click',()=>{
     window.location.href = './about.html';
   });
  
-  document.querySelector('.contact-js').addEventListener('click',()=>{
+  document.querySelector('.contact-js a').addEventListener('click',()=>{
     window.location.href = './contact.html';
   });
  }

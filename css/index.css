@@ -27,6 +27,7 @@
 
 .about-content p{
   color: gray;
+  text-align: start;
   
 }
 
@@ -197,7 +198,7 @@
   width: 100%;
 }
 .page{
-  min-width: 333px;
+  min-width: 288px;
 }
 
 
@@ -243,8 +244,7 @@
   
 }
 
-/* Tablets (max-width: 1024px) */
-/* Tablets (max-width: 1024px) */
+
 @media (min-width: 700px) and (max-width: 1246px) {
   .tech h1{
     text-align: center;
@@ -287,10 +287,7 @@
   }
 }
 
-/* Desktop devices (min-width: 1025px) */
-@media (min-width: 1025px) {
-  /* Styles for desktop devices */
-}
+
 
 
 

@@ -1,7 +1,7 @@
 .blank-border{
   background-color:#17125a;
   height: 3rem;
-  min-width: 333px;
+  min-width: 287px;
 }
 
 .hamb-menu{
@@ -248,4 +248,10 @@
     display: none;
   }
 
+}
+
+@media (max-width: 332px){
+  .m2-first-d .customer-support{
+   display: none;
+  }
 }

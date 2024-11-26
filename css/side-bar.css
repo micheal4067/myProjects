@@ -20,8 +20,8 @@ a, button {
   justify-content: center;
   align-items: flex-start;
   flex-direction: column;
-  cursor: pointer;
   padding-left: 20px;
+  padding-top: 1rem;
 }
 
 .sidebar-link a{
@@ -29,6 +29,11 @@ a, button {
   color: white;
   font-size: 17px;
   font-weight: bold;
+  transition: 0.5s;
+}
+
+.sidebar-link a:hover{
+  color: gold;
 }
 
 .sidebar-link:hover {
@@ -46,9 +51,13 @@ a, button {
 .close-menu-image{
   padding: 10px;
   background-color: rgb(5, 21, 49);
+  position: absolute;
+  right: 0;
+  cursor: pointer;
 }
 .close-menu{
   margin: 0;
+ 
 }
 
 .dropdown-menus  li a{
@@ -73,8 +82,6 @@ font-weight: bold;
   padding: 10px;
   position: absolute;
   list-style-type: none;
-
-
 }
 
 .services-link-container{
@@ -85,6 +92,7 @@ font-weight: bold;
 .carret-img{
   width: 80%;
   height: 1dvh;
+  cursor: pointer;
 }
 
 .carret{
